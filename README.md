@@ -38,7 +38,7 @@ var obj = {
  <space> <space>
 3. Classes 
 * Chúng ta có thể tạo class(lớp) mới sử dụng từ khóa  **class**  *
-`
+```
 class Profile {   
    constructor(surname, firstname= '') { // class constructor
       this.surname= surname;
@@ -51,13 +51,13 @@ class Profile {
 }
 let obj = new Profile('patel', 'atit');
 obj.getName(); // Full Name: patel atit
-`
+```
  <space> <space>
 4. Template Literals 
 * chúng ta có thể sử dụng biến trong chuỗi bằng cánh sử dụng `${variable}` *
 
-`
+```
 const name = `Your name is ${surname} ${firstname}.`
-`
+```
 
 
