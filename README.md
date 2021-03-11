@@ -1,3 +1,5 @@
+### Tính năng nổi bật từ ES2015(ES6) ======-> nay
+
 ## ES 2015 (ES6)
 1. Arrow function expressions
  * Arrow function có thể thay thế cho biểu thức hàm thông thường trong một số trường hợp  *
