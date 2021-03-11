@@ -2,7 +2,7 @@
 
 ## ES 2015 (ES6)
 
-###1. Arrow function expressions
+### 1. Arrow function expressions
  * Arrow function có thể thay thế cho biểu thức hàm thông thường trong một số trường hợp 
 
  ```javascript
@@ -39,7 +39,7 @@ var obj = {
 // obj.a = 1, obj.b = 2, obj.c = 3
 ```
 
-###3. Classes 
+### 3. Classes 
 * Chúng ta có thể tạo class(lớp) mới sử dụng từ khóa  **class**  
 ```javascript
 class Profile {   
@@ -56,13 +56,13 @@ let obj = new Profile('patel', 'atit');
 obj.getName(); // Full Name: patel atit
 ```
 
-###4. Template Literals 
+### 4. Template Literals 
 * chúng ta có thể sử dụng biến trong chuỗi bằng cánh sử dụng ``` `${variable}` ```
 
 ```javascript
 const name = `Your name is ${surname} ${firstname}.`
 ```
-###5. Destructuring Assignment
+### 5. Destructuring Assignment
 * Cú pháp này giúp giải nén các giá trị từ mảng hoặc thuộc tính từ các đối tượng.
 
 ```javascript
@@ -71,7 +71,7 @@ var {name, surname} = data;
 console.log(name); // atit
 console.log(surname); // patel
 ```
-###6.  Default + Rest + Spread
+### 6.  Default + Rest + Spread
 
 * Bây giờ, hàm hỗ trợ giá trị mặc định, tham số spread(dạng ...param) hoặc mảng dưới dạng đối số. 
 ```javascript
@@ -91,7 +91,7 @@ function add(a, b, c) {
 // Pass each element of array as argument
 add(...[1,2,3]) == 6
 ```
-###7.  Let + Const
+### 7.  Let + Const
 * 1 biến có phạm vi sử dụng ( block scope variable) khi khai báo với  let hoặc const.  
 
 ```javascript
@@ -109,7 +109,7 @@ function check() {
   }
 }
 ```
-###8. Promises
+### 8. Promises
  * Dùng giải quyết các vấn đề về bất đồng bộ 
 
 ```javascript
@@ -120,7 +120,7 @@ var asyncCall =  new Promise((resolve, reject) => {
    console.log('done!');
 })
 ```
-###9. Modules
+### 9. Modules
 * Chúng ta có thể export biến hoặc method vơi modules   
 
 ```javascript
@@ -135,7 +135,7 @@ export function add() {
 import {param, add} from 'module';
 console.log(param); // 1
 ``` 
-###10. Map + Set + WeakMap + WeakSet
+### 10. Map + Set + WeakMap + WeakSet
 * Cấu trúc hiệu quả cho các thuật toán phổ biến  
 
 ```javascript
@@ -158,7 +158,7 @@ var testWeakSet = new WeakSet();
 testWeakSet.add({ data: 5 });
 // Because the added object has no other references, it will not be held in the set
 ```
-###11. Math + Number + String + Array + Object APIs
+### 11. Math + Number + String + Array + Object APIs
 
 ```javascript
 Number.EPSILON
@@ -178,7 +178,7 @@ Object.assign(data, { origin: new data(0,0) })
 ```
 ## ES 2016
 
-###12. Array.prototype.includes()
+### 12. Array.prototype.includes()
 * Check mảng có giá trị nào đó hay không return boolean 
 
 ```javascript
@@ -186,14 +186,14 @@ const data = [1, 2, 3];
 console.log(array1.includes(2));
 // expected output: true
 ```
-###13. Exponentiation
+### 13. Exponentiation
 * Lũy thừa với ``` a**b ```
 ```javascript
 console.log(3 ** 4);
 // expected output: 81
 ```
 ## ES 2017
-###14. Object.entries()
+### 14. Object.entries()
 * Phương thức này trả về một mảng gồm các cặp khóa và giá trị đối tượng nhất định. 
 ```javascript
 const data = {
@@ -209,7 +209,7 @@ for (const [key, value] of Object.entries(data)) {
 // order is not guaranteed
 ```
 
-###15.  Object.values()
+### 15.  Object.values()
 * Phương thức này trả về một mảng các giá trị thuộc tính của đối tượng đã cho.  
 ```javascript
 const data = {
@@ -219,7 +219,7 @@ const data = {
 console.log(Object.values(data));
 // expected output: Array ["atit","patel"]
 ```
-###16. padStart()
+### 16. padStart()
 * Phương thức này thêm vào đầu  chuỗi hiện tại bằng một chuỗi khác cho đến khi chuỗi kết quả đạt đến độ dài. 
 ```javascript
 const test1 = '1';
@@ -231,14 +231,14 @@ const maskedNumber = last4Digits.padStart(data.length, '*');
 console.log(maskedNumber);
 // expected output: "*************581"
 ```
-17. padEnd()
+### 17. padEnd()
 * Phương thức này thêm vào cuối  chuỗi hiện tại bằng một chuỗi khác cho đến khi chuỗi kết quả đạt đến độ dài. 
 ```javascript
 const test1 = 'data data';
 console.log(test1.padEnd(12, '.'));
 // expected output: "data data..."
 ```
-###18.  Object.getOwnPropertyDescriptors()
+### 18.  Object.getOwnPropertyDescriptors()
 * Phương thức này trả về tất cả các bộ mô tả thuộc tính riêng của một đối tượng nhất định 
 ```javascript
 const data = {
@@ -250,7 +250,7 @@ console.log(descriptors1.property.writable);
 console.log(descriptors1.property.value);
 // expected output: 12
 ```
-###19. Async functions
+### 19. Async functions
 * **Async** functions mở rộng ** Promises** để thực hiện các cuộc gọi không đồng bộ.
 ```javascript
 async function test() {
@@ -263,7 +263,7 @@ async function test() {
 * ** await ** àm cho mỗi lệnh gọi xuất hiện như thể nó đồng bộ trong khi không giữ chuỗi xử lý đơn lẻ của JavaScript  
 
 ## ES 2018
-###20. Asynchronous Iteration
+### 20. Asynchronous Iteration
 * Với sự giúp đỡ của ** async ** và ** await **  chúng ta có thể chạy chuỗi lặp không đồng bộ trong vòng lặp ** for **. 
 ```javascript
 async function test(array) {
@@ -272,7 +272,7 @@ async function test(array) {
   }
 }
 ```
-###21.  Promise.finally()
+### 21.  Promise.finally()
 * ** finally ** phương thức trả về một lời hứa khi nó được giải quyết hoặc bị từ chối. Nó sẽ giúp tránh sao chép sau đó và bắt các trình xử lý. 
 ```javascript
 function callMethod() {
@@ -287,7 +287,7 @@ function callMethod() {
      });
    }
 ```
-###22. Rest/Spread Properties
+### 22. Rest/Spread Properties
 * Chúng ta có thể sử dụng rest/spread functionality  cho đối tượng và ** destructuring  ** và mảng 
 ```javascript
 const test = {
@@ -320,7 +320,7 @@ const test1= { a: 1, b: 2, c: 3 };
 const test2 ={ ...test1, d: 4 };
 // obj2 is { a: 1, b: 2, c: 3, d: 4 }
 ```
-###23. Regular Expression Named Capture Groups
+### 23. Regular Expression Named Capture Groups
 * Bây giờ chúng ta có thể nhóm để được đặt tên bằng cách sử dụng ký hiệu ```? <name> ```sau dấu ngoặc mở.
 ```javascript
 const
@@ -338,21 +338,21 @@ const
   usDate = d.replace(reDate, '$<month>-$<day>-$<year>');
 ```
 
-###24. Regular Expression s (dotAll) Flag
+### 24. Regular Expression s (dotAll) Flag
 * Dấu chấm ```.``` Regex. khớp với bất kỳ ký tự đơn nào ngoại trừ ký tự xuống dòng. Flag ``` s ``` thay đổi hành vi này để các dấu cuối dòng được phép. Ví dụ: 
 ```javascript
 /hi.test/s.test('hi\ntest'); // true
 
 ```
-###25.  Regular Expression Unicode Property Escapes
+### 25.  Regular Expression Unicode Property Escapes
 * Chúng tôi có thể đặt các thoát thuộc tính Unicode bằng bộ flag Unicode u và \ p {…} và \ p {…}
 ```javascript
 const reGreekSymbol = /\p{Script=Greek}/u;
 reGreekSymbol.test('π'); // true
 ```
 
-##ES 2019
-###26.  Array.flat()
+## ES 2019
+### 26.  Array.flat()
 * Phương thức này tạo một mảng mới bằng cách kết hợp (combining) các mảng khác trong mảng chính. Lưu ý: chúng ta có thể thiết lập độ sâu để kết hợp các mảng.
 ```javascript
 const test = [0, 1, 2, [3, 4]];
@@ -362,7 +362,7 @@ const test2 = [0, 1, 2, [[[3, 4]]]];
 console.log(test2.flat(2));
 // expected output: [0, 1, 2, [3, 4]]
 ```
-###27. Array.flatmap
+### 27. Array.flatmap
 * Phương thức này tạo một mảng mới bằng cách áp dụng hàm gọi lại(call back) cho mỗi phần tử của mảng. Nó cũng giống như một bản đồ với hoạt động phẳng. 
 ```javascript
 let test = [1, 2, 3, 4];
@@ -374,7 +374,7 @@ test.flatMap(x => [x * 3]);
 test.flatMap(x => [[x * 3]]);
 // [[3], [6], [9], [12]]
 ```
-###28. Object.fromEntries()
+### 28. Object.fromEntries()
 * Phương thức này biến đổi danh sách các cặp khóa-giá trị thành một đối tượng (Object). 
 ```javascript
 const entries_data = new Map([
@@ -385,7 +385,7 @@ const object = Object.fromEntries(entries_data);
 console.log(object);
 // expected output: Object { test: "data", test1: data2}
 ```
-###29.  String.trimStart() & String.trimEnd()
+### 29.  String.trimStart() & String.trimEnd()
 * ``` trimStart() ``` phương thức loại bỏ khoảng trắng từ đầu một chuỗi. 
 ```javascript
 const test = '   test   ';
@@ -398,7 +398,7 @@ const test = '   test   ';
 console.log(test.trimEnd());
 // expected output: "   test";
 ```
-###30.try…catch
+### 30.try…catch
 * ``` try…catch ``` câu lệnh đánh dấu một khối câu lệnh để thử và nếu có lỗi xảy ra, bắt sẽ xử lý nó 
 ```javascript
 try {
@@ -410,7 +410,7 @@ try {
 
 ```
 
-###31. Function.toString()
+### 31. Function.toString()
 * Phương thức này chuyển đổi bất kỳ phương thức / code nào thành chuỗi
 ```javascript
 function multiply(a, b) {
@@ -422,7 +422,7 @@ console.log(multiply.toString());
 //                   }"
 
 ```
-###32. Symbol.prototype.description
+### 32. Symbol.prototype.description
 * Thuộc tính này trả về một mô tả tùy chọn về đối tượng ``` Symbol  ```  
 ```javascript
 console.log(Symbol('desc').description);
@@ -436,7 +436,7 @@ console.log(`${Symbol('test').description}data`);
 
 ```
 ## ES2020
-###33. BigInt
+### 33. BigInt
 * ** BigInt  ** là một đối tượng tích hợp cung cấp cách biểu diễn các số (toàn bộ) lớn hơn 253–1 có thể được biểu diễn bằng hằng số Number.MAX_SAFE_INTEGER 
 ```javascript
 const previousMaxSafe = BigInt(Number.MAX_SAFE_INTEGER)
@@ -451,7 +451,7 @@ const alsoHuge = BigInt(9007199254740991)
 
 ```
 
-###34. Dynamic Import
+### 34. Dynamic Import
 * Dynamic Import cung cấp tùy chọn nhập động tệp JS dưới dạng mô-đun. Nó sẽ giúp bạn nhận được các mô-đun theo yêu cầu
 * Một lợi thế nữa là khi chúng ta import mô-đun, do đó nó sẽ không làm ô nhiễm không gian tên chung 
 ```javascript
@@ -465,7 +465,7 @@ import('/modules/test-module.js')
 ```javascript
 let module = await import('/modules/test-module.js');
 ```
-###35. Nullish coalescing Operator
+### 35. Nullish coalescing Operator
 * ``` nullish coalescing Operator ??  ``` được trả về giá trị phía bên phải nếu phía bên trái là ** null  ** hoặc ** undefined  **. Theo mặc định, nó sẽ trả về giá trị bên trái. 
 ```javascript
 const test= null ?? 'default';
@@ -476,7 +476,7 @@ console.log(test1);
 // expected output: 0
 
 ```
-###36. globalThis
+### 36. globalThis
 * ** globalThis  ** thuộc tính chứa giá trị này toàn cục, về cơ bản hoạt động như một đối tượng toàn cục. 
 ```javascript
 function canMakeHTTPRequest() {
@@ -486,7 +486,7 @@ console.log(canMakeHTTPRequest());
 // expected output (in a browser): true
 
 ```
-###37. Promise.allSettled()
+###  37. Promise.allSettled()
 * **  Promise.allSettled() ** phương thức trả về một promise  về cơ bản chứa mảng đối tượng với kết quả của mỗi promise . 
 ```javascript
 const promise1 = Promise.resolve(2);
@@ -500,7 +500,7 @@ Promise.allSettled(promises_data).
 
 ```
 
-###38. Optional Chaining
+### 38. Optional Chaining
 * ```  optional chaining operator?  ``` ọc giá trị với bất kỳ đối tượng được kết nối nào hoặc phương pháp kiểm tra và kiểm tra xem thuộc tính có tồn tại hay không. Nó sẽ trả về không xác định nếu tham chiếu là null hoặc không có sẵn. 
 ```javascript
 const data = {
@@ -516,7 +516,7 @@ console.log(data.abc?.());
 // expected output: undefined
 
 ```
-###39. String.prototype.matchAll()
+### 39. String.prototype.matchAll()
 * ``` matchAll() ``` phương thức trả về một iterator  của tất cả các kết quả khớp với một chuỗi với regex. 
 ```javascript
 
@@ -530,7 +530,7 @@ console.log(array[1]);
 ```
 
 
-###40. Named Export
+### 40. Named Export
 * Với tính năng này, chúng tôi có thể có nhiều bản export được đặt tên cho mỗi tệp. Chúng tôi có thể xác định một tên mới với từ “as” và import hoặc export nếu cần. 
 ```javascript
 // imports
@@ -551,11 +551,11 @@ import * as TestComponents from "./TestComponent";
 ```
 
 
-###41. . Well defined for-in order
+### 41. . Well defined for-in order
 * ECMA không chỉ định thứ tự cho (x in y) sẽ chạy. Mặc dù trước đây các trình duyệt đã tự thực hiện một trật tự nhất quán nhưng bây giờ nó đã được chuẩn hóa chính thức trong ES2020 
 
 
-###42. import.meta
+### 42. import.meta
 * Đối tượng này hiển thị siêu dữ liệu theo ngữ cảnh cụ thể cho một mô-đun JS. Về cơ bản, nó chứa thông tin về mô-đun. 
 ```javascript
 
@@ -570,7 +570,7 @@ console.log(import.meta);
 
 ```
 ## ES2021 
-###43. replaceAll
+### 43. replaceAll
 * ** replaceAll() ** phương thức trả về một chuỗi mới với tất cả các kết quả phù hợp của một mẫu được thay thế bằng từ thay thế mới.
 * Mẫu có thể là chuỗi hoặc Regexp 
 ```javascript
@@ -582,7 +582,7 @@ console.log(p.replaceAll('atit', 'patel'));
 // expected output: my name is patel
 
 ```
-###44. Promise.any()
+### 44. Promise.any()
 * Nó cần một đối tượng Promise có thể lặp lại và khi một lời hứa hoàn thành, trả về mộtpromise  duy nhất với giá trị. 
 ```javascript
 const promise1 = Promise.reject(0);
@@ -594,7 +594,7 @@ Promise.any(promises).then((value) => console.log(value)); //fast
 ```
 
 
-###45. Weakref
+### 45. Weakref
 * Đối tượng này giữ một tham chiếu yếu đến một đối tượng khác mà không ngăn đối tượng đó được thu gom rác. 
 * Link VD: Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef 
 ```javascript
@@ -646,11 +646,11 @@ setTimeout(() => {
 
 
 
-###46.FinalizationRegistry
+### 46.FinalizationRegistry
 * Cho phép bạn yêu cầu gọi lại khi một đối tượng là rác được thu thập. 
 * Link VD: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry 
 
-###47.FinalizationRegistry
+### 47.FinalizationRegistry
 * Các thuộc tính của lớp là public theo mặc định và có thể được kiểm tra hoặc sửa đổi bên ngoài lớp. Tuy nhiên, có một đề xuất ở giai đoạn 3 để cho phép xác định các trường private  bằng cách sử dụng``` #<property_name> ```. 
 ```javascript
 class TestClass {
@@ -667,7 +667,7 @@ class TestClass {
 
 ```
 
-###48.Logical Operators
+### 48.Logical Operators
 * Toán tử gán OR (x || = y) logic chỉ gán nếu x là sai. 
 ```javascript
 const a = { duration: 50, title: '' };
@@ -705,7 +705,7 @@ const n2 = 0o2_3_5_7; // octal
 const n3 = 0xA_B_C_D_E; // hex
 ```
 
-###50. Intl.ListFormat
+### 50. Intl.ListFormat
 * Đối tượng này cho phép định dạng danh sách nhạy cảm với ngôn ngữ. 
 ```javascript
 const data = ['abc', 'test', 'cde'];
@@ -718,7 +718,7 @@ console.log(formatter3.format(data));
 
 ```
 
-###51.  Intl.DateTimeFormat
+### 51.  Intl.DateTimeFormat
 * Đối tượng này cho phép định dạng ngày và giờ nhạy cảm với ngôn ngữ. 
 ```javascript
 // Specify default date formatting for language (locale)
