@@ -2,7 +2,7 @@
 1. Arrow function expressions
  * Arrow function có thể thay thế cho biểu thức hàm thông thường trong một số trường hợp  *
  <space> <space>
- ` 
+ ``` 
  const array = [
      1,
      2
@@ -11,11 +11,11 @@
  console.log( arrat.map( value => value *2 ) );
 
  // result [2, 4];
- `
+ ```
   <space> <space>
 2. Enhanced object  literals
 * Object literals được mở rộng để hỗ trợ thiết lập cấu trúc đối tượng * 
-` 
+```
 // old define object
 var a = 1, b = 2, c = 3;
 var obj = {
@@ -34,7 +34,7 @@ var obj = {
     c
 }
 // obj.a = 1, obj.b = 2, obj.c = 3
-`
+```
  <space> <space>
 3. Classes 
 * Chúng ta có thể tạo class(lớp) mới sử dụng từ khóa  **class**  *
