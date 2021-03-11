@@ -1,6 +1,7 @@
 ## ES 2015
 1. Arrow function expressions
  * Arrow function có thể thay thế cho biểu thức hàm thông thường trong một số trường hợp  *
+ #
  ` 
  const array = [
      1,
