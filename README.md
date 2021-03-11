@@ -12,6 +12,7 @@
 
  // result [2, 4];
  `
+  <space> <space>
 2. Enhanced object  literals
 * Object literals được mở rộng để hỗ trợ thiết lập cấu trúc đối tượng * 
 ` 
@@ -34,6 +35,7 @@ var obj = {
 }
 // obj.a = 1, obj.b = 2, obj.c = 3
 `
+ <space> <space>
 3. Classes 
 * Chúng ta có thể tạo class(lớp) mới sử dụng từ khóa  **class**  *
 `
@@ -50,6 +52,7 @@ class Profile {
 let obj = new Profile('patel', 'atit');
 obj.getName(); // Full Name: patel atit
 `
+ <space> <space>
 4. Template Literals 
 * chúng ta có thể sử dụng biến trong chuỗi bằng cánh sử dụng `${variable}` *
 
