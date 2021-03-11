@@ -1,6 +1,7 @@
 # Tính năng nổi bật từ ES2015(ES6) ======-> nay
 
 ## ES 2015 (ES6)
+
 ###1. Arrow function expressions
  * Arrow function có thể thay thế cho biểu thức hàm thông thường trong một số trường hợp 
 
@@ -72,7 +73,7 @@ console.log(surname); // patel
 ```
 ###6.  Default + Rest + Spread
 
-*Bây giờ, hàm hỗ trợ giá trị mặc định, tham số spread(dạng ...param) hoặc mảng dưới dạng đối số. 
+* Bây giờ, hàm hỗ trợ giá trị mặc định, tham số spread(dạng ...param) hoặc mảng dưới dạng đối số. 
 ```javascript
 function add(a, b=2) {
   // b is 2 if not passed (or passed as undefined)
@@ -91,7 +92,7 @@ function add(a, b, c) {
 add(...[1,2,3]) == 6
 ```
 ###7.  Let + Const
-*1 biến có phạm vi sử dụng ( block scope variable) khi khai báo với  let hoặc const.  
+* 1 biến có phạm vi sử dụng ( block scope variable) khi khai báo với  let hoặc const.  
 
 ```javascript
 function check() {
@@ -120,7 +121,7 @@ var asyncCall =  new Promise((resolve, reject) => {
 })
 ```
 ###9. Modules
-*Chúng ta có thể export biến hoặc method vơi modules   
+* Chúng ta có thể export biến hoặc method vơi modules   
 
 ```javascript
 export var param = 1; 
@@ -135,7 +136,7 @@ import {param, add} from 'module';
 console.log(param); // 1
 ``` 
 ###10. Map + Set + WeakMap + WeakSet
-*Cấu trúc hiệu quả cho các thuật toán phổ biến  
+* Cấu trúc hiệu quả cho các thuật toán phổ biến  
 
 ```javascript
 // Sets
@@ -178,7 +179,7 @@ Object.assign(data, { origin: new data(0,0) })
 ## ES 2016
 
 ###12. Array.prototype.includes()
-*Check mảng có giá trị nào đó hay không return boolean 
+* Check mảng có giá trị nào đó hay không return boolean 
 
 ```javascript
 const data = [1, 2, 3];
@@ -193,7 +194,7 @@ console.log(3 ** 4);
 ```
 ## ES 2017
 ###14. Object.entries()
-*Phương thức này trả về một mảng gồm các cặp khóa và giá trị đối tượng nhất định. 
+* Phương thức này trả về một mảng gồm các cặp khóa và giá trị đối tượng nhất định. 
 ```javascript
 const data = {
   name: 'atit',
@@ -209,7 +210,7 @@ for (const [key, value] of Object.entries(data)) {
 ```
 
 ###15.  Object.values()
-*Phương thức này trả về một mảng các giá trị thuộc tính của đối tượng đã cho.  
+* Phương thức này trả về một mảng các giá trị thuộc tính của đối tượng đã cho.  
 ```javascript
 const data = {
   name: 'atit',
@@ -219,7 +220,7 @@ console.log(Object.values(data));
 // expected output: Array ["atit","patel"]
 ```
 ###16. padStart()
-*Phương thức này thêm vào đầu  chuỗi hiện tại bằng một chuỗi khác cho đến khi chuỗi kết quả đạt đến độ dài. 
+* Phương thức này thêm vào đầu  chuỗi hiện tại bằng một chuỗi khác cho đến khi chuỗi kết quả đạt đến độ dài. 
 ```javascript
 const test1 = '1';
 console.log(test1.padStart(2, '0'));
@@ -231,14 +232,14 @@ console.log(maskedNumber);
 // expected output: "*************581"
 ```
 17. padEnd()
-*Phương thức này thêm vào cuối  chuỗi hiện tại bằng một chuỗi khác cho đến khi chuỗi kết quả đạt đến độ dài. 
+* Phương thức này thêm vào cuối  chuỗi hiện tại bằng một chuỗi khác cho đến khi chuỗi kết quả đạt đến độ dài. 
 ```javascript
 const test1 = 'data data';
 console.log(test1.padEnd(12, '.'));
 // expected output: "data data..."
 ```
 ###18.  Object.getOwnPropertyDescriptors()
-*Phương thức này trả về tất cả các bộ mô tả thuộc tính riêng của một đối tượng nhất định 
+* Phương thức này trả về tất cả các bộ mô tả thuộc tính riêng của một đối tượng nhất định 
 ```javascript
 const data = {
   property: 12
@@ -263,7 +264,7 @@ async function test() {
 
 ## ES 2018
 ###20. Asynchronous Iteration
-*Với sự giúp đỡ của ** async ** và ** await **  chúng ta có thể chạy chuỗi lặp không đồng bộ trong vòng lặp ** for **. 
+* Với sự giúp đỡ của ** async ** và ** await **  chúng ta có thể chạy chuỗi lặp không đồng bộ trong vòng lặp ** for **. 
 ```javascript
 async function test(array) {
   for await (let i of data) {
@@ -299,7 +300,7 @@ const { a, ...x } = test;
 // x = { b: 2, c: 3 }
 ```
 
-*Hoặc chúng ta có thể sử dụng nó để chuyển các giá trị cho một hàm: 
+* Hoặc chúng ta có thể sử dụng nó để chuyển các giá trị cho một hàm: 
 ```javascript
 test({
   a: 1,
@@ -311,8 +312,8 @@ function test({ a, ...x }) {
   // x = { b: 2, c: 3 }
 }
 ```
-*Giống như mảng, chúng ta chỉ có thể sử dụng một tham số nghỉ duy nhất ở cuối khai báo 
-*Toán tử spread có thể được sử dụng trong các đối tượng khác. Ví dụ:
+* Giống như mảng, chúng ta chỉ có thể sử dụng một tham số nghỉ duy nhất ở cuối khai báo 
+* Toán tử spread có thể được sử dụng trong các đối tượng khác. Ví dụ:
 
 ```javascript
 const test1= { a: 1, b: 2, c: 3 };
@@ -320,7 +321,7 @@ const test2 ={ ...test1, d: 4 };
 // obj2 is { a: 1, b: 2, c: 3, d: 4 }
 ```
 ###23. Regular Expression Named Capture Groups
-*Bây giờ chúng ta có thể nhóm để được đặt tên bằng cách sử dụng ký hiệu ```? <name> ```sau dấu ngoặc mở.
+* Bây giờ chúng ta có thể nhóm để được đặt tên bằng cách sử dụng ký hiệu ```? <name> ```sau dấu ngoặc mở.
 ```javascript
 const
   reDate = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/,
@@ -329,7 +330,7 @@ const
   month  = match.groups.month, // 01
   day    = match.groups.day;   // 04
 ```
-*có thể được sử dụng với phương thức thay thế để định dạng ngày tháng.
+* có thể được sử dụng với phương thức thay thế để định dạng ngày tháng.
 ```javascript
 const
   reDate = /(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})/,
@@ -338,13 +339,13 @@ const
 ```
 
 ###24. Regular Expression s (dotAll) Flag
-*Dấu chấm ```.``` Regex. khớp với bất kỳ ký tự đơn nào ngoại trừ ký tự xuống dòng. Flag ``` s ``` thay đổi hành vi này để các dấu cuối dòng được phép. Ví dụ: 
+* Dấu chấm ```.``` Regex. khớp với bất kỳ ký tự đơn nào ngoại trừ ký tự xuống dòng. Flag ``` s ``` thay đổi hành vi này để các dấu cuối dòng được phép. Ví dụ: 
 ```javascript
 /hi.test/s.test('hi\ntest'); // true
 
 ```
 ###25.  Regular Expression Unicode Property Escapes
-*Chúng tôi có thể đặt các thoát thuộc tính Unicode bằng bộ flag Unicode u và \ p {…} và \ p {…}
+* Chúng tôi có thể đặt các thoát thuộc tính Unicode bằng bộ flag Unicode u và \ p {…} và \ p {…}
 ```javascript
 const reGreekSymbol = /\p{Script=Greek}/u;
 reGreekSymbol.test('π'); // true
@@ -352,7 +353,7 @@ reGreekSymbol.test('π'); // true
 
 ##ES 2019
 ###26.  Array.flat()
-*Phương thức này tạo một mảng mới bằng cách kết hợp (combining) các mảng khác trong mảng chính. Lưu ý: chúng ta có thể thiết lập độ sâu để kết hợp các mảng.
+* Phương thức này tạo một mảng mới bằng cách kết hợp (combining) các mảng khác trong mảng chính. Lưu ý: chúng ta có thể thiết lập độ sâu để kết hợp các mảng.
 ```javascript
 const test = [0, 1, 2, [3, 4]];
 console.log(test.flat());
@@ -362,7 +363,7 @@ console.log(test2.flat(2));
 // expected output: [0, 1, 2, [3, 4]]
 ```
 ###27. Array.flatmap
-*Phương thức này tạo một mảng mới bằng cách áp dụng hàm gọi lại(call back) cho mỗi phần tử của mảng. Nó cũng giống như một bản đồ với hoạt động phẳng. 
+* Phương thức này tạo một mảng mới bằng cách áp dụng hàm gọi lại(call back) cho mỗi phần tử của mảng. Nó cũng giống như một bản đồ với hoạt động phẳng. 
 ```javascript
 let test = [1, 2, 3, 4];
 test.map(x => [x * 2]);
@@ -374,7 +375,7 @@ test.flatMap(x => [[x * 3]]);
 // [[3], [6], [9], [12]]
 ```
 ###28. Object.fromEntries()
-*Phương thức này biến đổi danh sách các cặp khóa-giá trị thành một đối tượng (Object). 
+* Phương thức này biến đổi danh sách các cặp khóa-giá trị thành một đối tượng (Object). 
 ```javascript
 const entries_data = new Map([
   ['test', 'data'],
@@ -410,7 +411,7 @@ try {
 ```
 
 ###31. Function.toString()
-*Phương thức này chuyển đổi bất kỳ phương thức / code nào thành chuỗi
+* Phương thức này chuyển đổi bất kỳ phương thức / code nào thành chuỗi
 ```javascript
 function multiply(a, b) {
   return a * b;
@@ -422,7 +423,7 @@ console.log(multiply.toString());
 
 ```
 ###32. Symbol.prototype.description
-*Thuộc tính này trả về một mô tả tùy chọn về đối tượng ``` Symbol  ```  
+* Thuộc tính này trả về một mô tả tùy chọn về đối tượng ``` Symbol  ```  
 ```javascript
 console.log(Symbol('desc').description);
 // expected output: "desc"
@@ -460,7 +461,7 @@ import('/modules/test-module.js')
   });
 
 ```
-*Biểu mẫu này cũng hỗ trợ từ khóa await 
+* Biểu mẫu này cũng hỗ trợ từ khóa await 
 ```javascript
 let module = await import('/modules/test-module.js');
 ```
@@ -530,7 +531,7 @@ console.log(array[1]);
 
 
 ###40. Named Export
-*Với tính năng này, chúng tôi có thể có nhiều bản export được đặt tên cho mỗi tệp. Chúng tôi có thể xác định một tên mới với từ “as” và import hoặc export nếu cần. 
+* Với tính năng này, chúng tôi có thể có nhiều bản export được đặt tên cho mỗi tệp. Chúng tôi có thể xác định một tên mới với từ “as” và import hoặc export nếu cần. 
 ```javascript
 // imports
 // ex. importing a single named export
@@ -542,7 +543,7 @@ export const MyComponent = () => {}
 export const abcComponent= () => {}
 
 ```
-*Import tất cả các bản export đã đặt tên vào một đối tượng: ``` * ``` 
+* Import tất cả các bản export đã đặt tên vào một đối tượng: ``` * ``` 
 ```javascript
 import * as TestComponents from "./TestComponent";
 // use TestComponents.TestComponent and    TestComponents.TestComponent2 here
@@ -555,14 +556,14 @@ import * as TestComponents from "./TestComponent";
 
 
 ###42. import.meta
-*Đối tượng này hiển thị siêu dữ liệu theo ngữ cảnh cụ thể cho một mô-đun JS. Về cơ bản, nó chứa thông tin về mô-đun. 
+* Đối tượng này hiển thị siêu dữ liệu theo ngữ cảnh cụ thể cho một mô-đun JS. Về cơ bản, nó chứa thông tin về mô-đun. 
 ```javascript
 
 <script type="module" src="test-module.js"></script>
 
 ```
 
-*bạn có thể truy cập thông tin meta về mô-đun bằng cách sử dụng đối tượng import.meta 
+* bạn có thể truy cập thông tin meta về mô-đun bằng cách sử dụng đối tượng import.meta 
 ```javascript
 console.log(import.meta);
  // { url: "file:///home/path/test-module.js" }
@@ -582,7 +583,7 @@ console.log(p.replaceAll('atit', 'patel'));
 
 ```
 ###44. Promise.any()
-*Nó cần một đối tượng Promise có thể lặp lại và khi một lời hứa hoàn thành, trả về mộtpromise  duy nhất với giá trị. 
+* Nó cần một đối tượng Promise có thể lặp lại và khi một lời hứa hoàn thành, trả về mộtpromise  duy nhất với giá trị. 
 ```javascript
 const promise1 = Promise.reject(0);
 const promise2 = new Promise((resolve) => setTimeout(resolve, 50, 'fast'));
@@ -594,7 +595,7 @@ Promise.any(promises).then((value) => console.log(value)); //fast
 
 
 ###45. Weakref
-*Đối tượng này giữ một tham chiếu yếu đến một đối tượng khác mà không ngăn đối tượng đó được thu gom rác. 
+* Đối tượng này giữ một tham chiếu yếu đến một đối tượng khác mà không ngăn đối tượng đó được thu gom rác. 
 * Link VD: Link : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef 
 ```javascript
 class Counter {
@@ -646,7 +647,7 @@ setTimeout(() => {
 
 
 ###46.FinalizationRegistry
-*Cho phép bạn yêu cầu gọi lại khi một đối tượng là rác được thu thập. 
+* Cho phép bạn yêu cầu gọi lại khi một đối tượng là rác được thu thập. 
 * Link VD: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry 
 
 ###47.FinalizationRegistry
@@ -667,7 +668,7 @@ class TestClass {
 ```
 
 ###48.Logical Operators
-*Toán tử gán OR (x || = y) logic chỉ gán nếu x là sai. 
+* Toán tử gán OR (x || = y) logic chỉ gán nếu x là sai. 
 ```javascript
 const a = { duration: 50, title: '' };
 a.duration ||= 10;
@@ -678,7 +679,7 @@ console.log(a.title);
 // expected output: "title is empty"
 
 ```
-*Toán tử gán logic AND (x && = y) chỉ gán nếu x là true. 
+* Toán tử gán logic AND (x && = y) chỉ gán nếu x là true. 
 ```javascript
 let a = 1;
 let b = 0;
@@ -691,8 +692,8 @@ console.log(b);
 
 ```
 
-###49. Numeric Separators
-*Đây là tính năng giúp chúng ta đỡ đau khi đọc các số lớn. 
+### 49. Numeric Separators
+* Đây là tính năng giúp chúng ta đỡ đau khi đọc các số lớn. 
 ```javascript
 const value = 1000000000000;
  // Có một tính năng trong JavaScript cho phép gạch dưới làm dấu phân cách trong các ký tự số để cải thiện khả năng đọc
@@ -705,7 +706,7 @@ const n3 = 0xA_B_C_D_E; // hex
 ```
 
 ###50. Intl.ListFormat
-*Đối tượng này cho phép định dạng danh sách nhạy cảm với ngôn ngữ. 
+* Đối tượng này cho phép định dạng danh sách nhạy cảm với ngôn ngữ. 
 ```javascript
 const data = ['abc', 'test', 'cde'];
 const formatter1 = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' });
@@ -718,7 +719,7 @@ console.log(formatter3.format(data));
 ```
 
 ###51.  Intl.DateTimeFormat
-*Đối tượng này cho phép định dạng ngày và giờ nhạy cảm với ngôn ngữ. 
+* Đối tượng này cho phép định dạng ngày và giờ nhạy cảm với ngôn ngữ. 
 ```javascript
 // Specify default date formatting for language (locale)
 console.log(new Intl.DateTimeFormat('en-US').format(date));
