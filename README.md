@@ -54,7 +54,7 @@ obj.getName(); // Full Name: patel atit
 ```
  <space> <space>
 4. Template Literals 
-* chúng ta có thể sử dụng biến trong chuỗi bằng cánh sử dụng `${variable}` *
+* chúng ta có thể sử dụng biến trong chuỗi bằng cánh sử dụng ``` `${variable}` ```*
 
 ```
 const name = `Your name is ${surname} ${firstname}.`
