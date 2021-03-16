@@ -11,7 +11,7 @@
      2
  ];
 
- console.log( arrat.map( value => value *2 ) );
+ console.log( array.map( value => value *2 ) );
 
  // result [2, 4];
  ```
